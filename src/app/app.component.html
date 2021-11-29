@@ -14,6 +14,9 @@
 <div class="content" role="main">
   <div *ngIf="afAuth.authState | async as user">
     Welcome {{user.displayName}} !!!
+    <!-- Esto no se como sacarlo
+    Welcome {{user.providerId}} !!! -->
+    Welcome {{user.uid}} !!!
   </div>
 
   <div class="card-container">
